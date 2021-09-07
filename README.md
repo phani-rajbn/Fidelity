@@ -46,4 +46,50 @@ For example,
 * sortThreeNumbers(2, 10, 100); // prints 2, 10, 100 and so on.
 
 Write a  program to call the above function multiple times with different values.
+---------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------DAY 02--------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
+Write a function called "sumOfPrimes", that takes two integers as input and returns the sum of all the prime numbers between the same.
+
+````
+public int sumOfPrimes(int from, int to) { 
+	// do stuff here
+	return 0; 
+}
+
+Write a  program to call the above function multiple times with different values.
+-------------------------------------------------------------------------------------------------------
+
+
+In mathematics, the Fibonacci numbers are the numbers in the following integer sequence, characterized by the fact that every number after the first two numbers is the sum of the two preceding ones:
+
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
+
+Write a function called "fibonacci", that takes index as paramter and returns the fibonacci number at that index.
+
+````
+public int fibonacci(int index) { 
+	// do stuff here
+	return 0; 
+}
+````
+
+-------------------------------------------------------------------------------------------------------
+
+
+Write a  program to print the following pattern:
+
+````
+*
+**
+***
+****
+*****
+````
+
+The number of rows should be based on the value of a variable "num", and the number of stars in a row is based on the row number itself.
+-------------------------------------------------------------------------------------------------------
+Create an array of strings with size based on the size of the team and take  inputs from the user to store the names. 
+Display the names using foreach loop.  
+
 
