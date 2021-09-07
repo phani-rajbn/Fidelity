@@ -78,3 +78,95 @@ static void Main(String []args)
             else
                 Console.WriteLine("value 1 is greater than value 2");
 }
+-------------------------------------------------------Day 2--------------------------------------------------------------------------------------------
+//Example of Array taking inputs from the user...
+static void Main(string[] args)
+{
+	//datatype [] identifier = new datatype[size];
+	//datatype [] identifier = {elements of the array seperated by comma};
+	Console.WriteLine("Enter the size of the array"); //Ask the user to enter the size of the array
+	int size = int.Parse(Console.ReadLine());//get the value...
+	int[] elements = new int[size];//create the array
+
+	//Iterate thro the elements of the array to ask the user to enter x number of times...
+	for (int i = 0; i < size; i++)
+	{
+		Console.WriteLine($"Enter the value for the element at location {i}");
+		elements[i] = int.Parse(Console.ReadLine());
+	}
+	Console.WriteLine("Now all the values are set!!!!!!!");
+
+	//Display the elements of the array in a single line..
+	foreach (int element in elements)
+	{
+		Console.Write(element + " ");//Observe the differen
+	}
+	Console.WriteLine();
+}
+-------------------------------------------MultiDimensional Array--------------------------------------------------------
+Get the Info about the array at runtime:
+static void Main(string[] args)
+{
+	int[,] Scores = { { 45, 56, 66 }, { 56, 66, 77 }, { 45, 55, 89 }, { 78, 89, 90 }, { 67, 83, 81 } };
+	//To know the dimensions of this array.. 
+	Console.WriteLine("The Dimensions of this array is " + Scores.Rank);
+	Console.WriteLine("The total no of elements is " + Scores.Length);
+	//Console.WriteLine("The no of elements in the 1st dimension: " + Scores.GetLength(0));
+	//Console.WriteLine("The no of elements in the 2nd dimension: " + Scores.GetLength(1));
+	Console.WriteLine($"This is an array of {Scores.GetLength(0)} X {Scores.GetLength(1)}");
+}
+///////////////////////////////Matrix format presentation//////////////////////////////////////////////////
+static void Main(string[] args)
+{
+	int[,] Scores = { { 45, 56, 66 }, { 56, 66, 77 }, { 45, 55, 89 }, { 78, 89, 90 }, { 67, 83, 81 } };
+	//Display the elements of this array in matrix format:
+	for (int i = 0; i < Scores.GetLength(0); i++)
+	{
+		for (int j = 0; j < Scores.GetLength(1); j++)
+		{
+			Console.Write(Scores[i,j] +  "  ");
+		}
+		Console.WriteLine();//To move over to the next line...
+	}
+}
+/////////////////////////////////////////Jagged Array--------------------------------------------------------
+static void Main(string[] args)
+	{
+		//Jagged array
+		int[][] school = new int[5][];//Jagged array syntax..
+		school[0] =new int[] { 45,67,77,56,45,62};
+		school[1] =new int[] { 56,45,62};
+		school[2] =new int[] { 23,55,81,12,18,77,56,45,62};
+		school[3] =new int[] { 77,56,45,62};
+		school[4] =new int[] { 45,67,77, 56, 45, 62, 77, 56, 35, 68};
+		//Length property of the Jagged Array will give the rows of the array
+		for (int i = 0; i < school.Length; i++)
+		{
+			foreach(int value in school[i])
+				Console.Write(value + " ");
+			Console.WriteLine();
+		}
+
+	}
+-------------------------Using Array class to create Arrays dynamically-----------------------------------------
+ static void Main(string[] args)
+{
+	//Create an array dynamically including its size and type...
+	Console.WriteLine("Enter the size of the array");
+	int size = int.Parse(Console.ReadLine());
+
+	Console.WriteLine("Enter the data type of the CTS for the Array to be created");
+	Type type = Type.GetType(Console.ReadLine());//Get the type of the data that U want to store
+
+	Array array = Array.CreateInstance(type, size);//Create an array at runtime....
+	for (int i = 0; i < size; i++)
+	{
+		Console.WriteLine($"Enter the value for the index {i} of the data type {type.Name}");
+		object value = Convert.ChangeType(Console.ReadLine(), type);
+		//Converts the value to the type that U want to....
+		array.SetValue(value, i);
+	}
+	Console.WriteLine("All the values are set!!!!");
+	foreach(object value in array)
+		Console.WriteLine(value);
+}
