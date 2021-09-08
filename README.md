@@ -92,8 +92,7 @@ The number of rows should be based on the value of a variable "num", and the num
 Create an array of strings with size based on the size of the team and take  inputs from the user to store the names. 
 Display the names using foreach loop.  
 
-
-#################### Day 3###########################################################################3
+-------------------------------- Day 3-------------------------------------------------------
 Create a class called Employee with properties called EmpID, EmpName, EmpAddress, EmpDOB. 
 Create a program to create the instance of the Employee and set the values using User inputs. Read the data after setting the Employee details.
 Create 5 employee objects and fill the data for it and observe how it behaves. 
