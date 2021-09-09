@@ -1,0 +1,43 @@
+.NET is a technology for building various kinds of apps using various programming languages that can execute on various platforms. 
+Terminal based, Database, Web based, Windows Based, Mobile, Micro level apps. 
+Languages like C#, VB.NET, C++, Cobol, Python, Pascal and many more.
+Multiple platforms include Windows, Mac and Linux dist. 
+.NET is distributed as .NET Framework which is available on every shippment of Windows OS since Win7. .NET is now like a platform on which .NET Apps will execute. Latest version is 4.7.8.
+C# is the popular language used to work on .NET. C# is one that was created for building .NET Apps and is the recommended language by MS.  
+.NET Contains FCL(Framework Class Library), CLR(Runtime for executing .NET Apps) and CLS(Stds defined for compilers and environments).
+FCL contain ready-to-use classes, interfaces and components for building various kinds of Apps. They are also called as APIs. There are 1000s of classes, grouped into namespaces and distributed as DLLs. 
+Execution happens in the form of dual compilation. Code will be compiled into an intermediate language  by its language compiler with support for it as MANIFEST (Metadata).This file is called as ASSEMBLY. An Assembly is deployment unit of .NET.
+When executed on the .NET Enabled Machine, CLR will come into picture to re-compile the MSIL code into Native code that is optimized to execute on the specific platform. This compilation is done by JIT Compiler, a compiler inside CLR.
+CLR is RUNTIME ENVIRONMENT for all .NET Apps. Without CLR, UR .NET App does not execute. It is similar to JVM of Java. CLR contains JIT Compiler, Memory Management and executional tools to make the app optimized.
+All languages of .NET have to follow the guidelines defined by CLS(Common language Specification) which tells about the features, implementations, Compiler support and many more to make the code runnable on the CLR.  
+All data types of the language are based on Common Type System(CTS) which defines the data types for all .NET languages. 
+
+C# has taken the best of the features from different languages and created with its own set of features to make a complete programming language. OOP features of C++, Execution feature of Java and RAD feature of VB.  
+C# is a OOP language built by MS for building and running Apps on .NET Framework. 
+C# tries to make itself into a pure Object oriented program with extensive usage of Classes and objects. No global functions are allowed in C#. If U want to share data among the classes, U can make them static.
+Removed all ambiguois features of C++ to maintain clean programming language
+Simple to use and learn. 
+Typesafe programming language. Backward compatibility with old technologies like COM.
+We use VS, IDE for developing C# apps. It is available free of cost as Community Edition which can be downloaded and instgalled in uR Machine.
+Syntax looks similar to C++
+
+Data Types:
+2 classifications of data types: 
+Value types(Primitive types):Integral(byte, short, int, long), Floating(float, double, decimal), Other Types(char, bool) and User Defined types(structs, enums). All the Value types are objects of a class derived from System.ValueType. With this, U have functions that will allow to convert string values to it's data types and vise versa. 
+U can use these functions for data conversions. However for all kinds of conversions, U can use static class Convert that has APIS to convert from one type to any other type in .NET 
+Important methods: 
+Parse method is used to convert a valid value of string to a specific value type. 
+TryParse is the improvised version for safe conversion. 
+ToString is used to convert a variable data to a string representation. 
+For numeric types, U have constants MinValue and MaxValue
+ 
+Reference types: Classes, Strings, Arrays, Delegates and Object.   
+Arrays:
+Group of elements belonging to the same type on which U can perform a common operation(s) on them with a simple iteration. It has continuous memory allocation and iterating them will be easy. Arrays are reference types in C#. The memory for the array will be allocated in managed heap and the reference of the memory is what the variable stores. Memory in the heap is created using new operator. Most of the reference are directly or indirectly created using new operator. Arrays are fixed in size, they cannot be modified(adding, removing and soforth).
+All arrays in C# are objects of a class System.Array with which U get APIs to get details about the array at runtime as well as coping the array into another. 
+
+for vs. foreach: for loop need not have a collection to perform the iteration. U can reverse it. for can allow to jump the elements
+foreach: used only on collections, its forward only, its read only. U cannot jump the sequence of elements.
+
+
+ 
