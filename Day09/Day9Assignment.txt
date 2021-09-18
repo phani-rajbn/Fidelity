@@ -1,0 +1,6 @@
+﻿Project on moviedatabase similar to IMDB.
+1. Create a class called Movie: Auto generating no called ID, MovieName, ReleaseDate, Duration, Director, Rating(15 min).
+2. Create an interface IMovieDatabase with the following methods:
+		AddNewMovieToDatabase, An indexer to get a Movie based on ID, FindMoviesByDirector, FindMoviesByName.(15 min), GetTopRatedMovies. 	
+3. Create a class called MovieDB that implements the IMovieDatabase interface(30 min)
+4. GetTopRatedMovies should return the movies sorted by the rating, top rated movies should come first. 
