@@ -1,0 +1,5 @@
+﻿1. Create a class called Employee with ID, Name, Address and Salary as properties. Override the ToString method to return the data as Coma Seperated String content. Sample Output: 123,Phaniraj,Bangalore,56000 
+2. Create an interface IEmployeeDemo with methods to add, remove, update and find employee by id, name and address. 
+3. Implement the class with List<Employee> as internal data structure. 
+(40 min to complete this)
+4. Implement the CURD methods using file io where the data will be stored in one file in the form of CSV(Coma Seperated Values). 

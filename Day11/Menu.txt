@@ -1,0 +1,6 @@
+﻿~~~~~~~~~~~~~~~~~~~~~~~~~~MOVIE DATABASE APP~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TO REGISTER A NEW MOVIE----------------->PRESS C
+TO UPDATE MOVIE DETAILS----------------->PRESS U
+TO FIND A MOVIE ON TITLE---------------->PRESS R
+TO REMOVE A MOVIE----------------------->PRESS D
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
