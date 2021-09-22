@@ -1,0 +1,5 @@
+﻿
+Reimplement the interface IEmployeeDemo of Day11 into a new Class that supports serialization instead of file IO. 
+In this case, the object stored will be List<Employee> instead of the single object. 
+Do not recreate the interface. U should use the same interface implemented under a new class.
+Do some paper work. Try the example like a POC(Proof of Concept) and then extend its implementation as per the business requirement.  

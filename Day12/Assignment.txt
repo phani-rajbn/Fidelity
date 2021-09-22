@@ -1,0 +1,7 @@
+﻿1. Create a Generic class to perform the CRUD operations on Employee class. Explore Constraints in Generics. 
+2. The Class will have methods to insert, delete, update and Find based on the string(Name). 
+3. The class will implement the methods to save the data into the as Text based data. 
+4. Create an UI Application that will consume this class and perform the operations and will save the data. 
+5. Create a class called DataException which will be thrown as per UR business needs. 
+Allow the UI to handle the exceptions. 
+From now on, UR application can be closed and reopened to get back the data that U have saved. 
