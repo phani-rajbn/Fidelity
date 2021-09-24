@@ -1,0 +1,32 @@
+HTML stands for Hyper Text markup language. It is used to create Web pages that can be viewed thru' a browser. html is the fundamental thing that needs to be learnt for creating any kind of web content.
+Html is made of tags that are sp instructions to the browser on how the content/text has to be presented. The contents of the html will be more on text. Even images that are used in html are refered as text which will specify the location of the image. HTML does not have any mechanism to draw the image, it simply displays the image from the specified source(File path).
+html is all text based. So if U want to share info to all kinds of users and devices, U create the data as html content and share it to all thru a medium called internet. internet enables persons to view the content over the network using a thin software called browser. 
+html content are viewed browser. 
+
+html pages are saved as .html or .htm. The tags of the html defines the way the browser should display. We call them as elements of the html.
+html pages can be developed by any text editor Ur os supports. Prominent ones are notepad++, VS code, Sublime, Eclipse, VS and many more. Many of the Editors are downloadable and free. The most popular Text editor for creating web content is VS code. 
+Every html page will have structure, of course they are not mandatory. It is good practice as a professional web developer to create the content in a systematic manner. 
+<!DOCTYPE html> declaration defines that it is a html5 document.
+<html> tells the begining of the document. It is also called as root element as every other tag that is added will be within the html tag. 
+<head> and <body> are the two primary divisions of the html page. head will contain info and external links(Non HTML Content) for the page. head section is not visible in the browser except for the title of the page. 
+<body> section is the one that defines the content of the html document.
+<h1..h6> will be used for headings of the page, content and blocks. 
+<p> is used to specify a paragraph.
+<div> divides the page into sections. U can have nested divs and any number of div within the html doc.     
+<hr> will create a line horizontally. Used like a divider. 
+<br> is used to break the content to move to the next line. Html does not recognize the white spaces. 
+
+U also have a host of formatting tags for formatting the content of the html page.
+<ul> and <ol> are used to create lists and will have a number of <li> list items for the list. It could be ordered or unordered. 
+<table> is used to display the content in a tabular format. It has elements like tr, th, td and few more. 
+<a> is used to link/redirect to other html content, may be in the same page or to another page.
+<form> is used to create forms for the user to enter data to the html document. form is supported with elements like input, select, button and many more that will allow html to design pages that take inputs from the user as form entry. Ofcourse, U need to use some scripting language to process the content. 
+<link> is used to provide styles(colors to Ur page) where we use CSS which can be linked into Ur html pages. 
+<script> is used to link external scripting that contain programming logic on processing Ur html forms and pages. 
+html is not a programming language, it is simply a mark up language.  
+
+Issues:
+html is static. Any dynamic change that needs to be created in the html is not possible. To create dynamic content we use scripting languages.
+Client side scripting is where U can get dynamic content with high level of performance. U need browser support for processing client side sripts. JS is the most popular Client side scripting. It is accepted by all browsers. As per W3C stds, JS is one of the mandatory scripting languages that every browser must support. 
+browsers will have interpretors, a small low level software that will process the scripts written that language. JS interpretor is available on all browsers that are used in the industry.
+JavaScript has no relation with Java. JS is opensource and Java is a proprietory language of Oracle.  

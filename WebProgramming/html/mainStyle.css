@@ -1,0 +1,26 @@
+h1{
+  text-align: center;
+  font-size: 48pt;
+  color: lightslategray;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+}
+
+h2, h3{
+    font-size: 20pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div, article{
+    width: 30%;
+    display: inline-block;
+    border: 2px solid green;
+    background-color: lightseagreen;
+    margin-left: 35px;
+    padding: 5px;
+    vertical-align: top;
+}
+.tableDiv{
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+    background-color: lightyellow;
+}

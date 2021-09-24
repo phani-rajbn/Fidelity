@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        input, select{
+            border: 2px solid salmon;
+            color: blue;
+            background-color: skyblue;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 26pt;
+            min-width: 200px;
+        }
+    </style>
+    <title>User inputs</title>
+    <script>
+        //access the values entered by the user in those controls.
+        //Use the DOM functions to access each element of the html.
+        function getResult(){
+            var first =  document.getElementById("firstvalue").value;
+            var second = document.getElementById("secondvalue").value;
+            var option = document.getElementById("option").value;
+            //create a calculating logic for those values. 
+            switch (option) {
+                case "+":                    
+                    alert("The Added value: " + first + second);
+                    break;
+                case "-":
+                    alert("The subtrct value: " + first - second);
+                    break;    
+                case "X":
+                    alert("The multiplied value: " + first * second);
+                    break;
+                case "/":
+                    alert("The divided value: " + first / second);
+                    break;
+            }
+        }
+        //associate the code to a function that can be called when the button is clicked. 
+    </script>
+</head>
+<body>
+    <section>
+        <p>
+            Forms are pages that contain input tags to take inputs from the user for the Web application. It is typical to a form that U see in a day to day life.
+            The inputs will provide the scope for the user to type things, select from a list, select an
+            option or a checkbox, select a range, date and many other things that a user wishes to send
+            information to the application. 
+            All user inputs are expected to be put under the form tag. 
+        </p>
+    </section>
+    <hr/>
+   <div>
+    <h1>Calculator program</h1>
+    <input id="firstvalue" placeholder="First Value"/><br/>
+    <input id = "secondvalue" placeholder="Second Value"/><br/>
+    <p>
+        Select the Operation:
+        <select id="option">
+            <option>+</option>
+            <option>-</option>
+            <option>X</option>
+            <option>/</option>
+        </select>
+    </p>
+    <button onclick="getResult()">Calculate</button>
+   </div>
+<footer>
+    <hr />
+    <a href="HomePage.html">Home</a>
+    <p><i>HTML Training by Phaniraj-@2021</i></p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<html>
+    <script src="functions.js"></script>
+    <script>
+        function funName(){
+            alert("testFunc");
+        }
+
+        function funWithArgs(arg){
+            alert("Func with arg " + arg)
+        }
+
+        function addFunc(first, second) {
+            return first + second;
+        } 
+//        funName();
+        // let fVal = parseFloat(prompt("Enter the first value"));
+        // let sVal = parseFloat(prompt("Enter the second value"));
+        // alert(addFunc(fVal, sVal));
+        //parseInt vs parseFloat.  
+        
+        function getResult(){
+            const v1 = parseFloat(document.getElementById("firstvalue").value);
+            const v2 = parseFloat(document.getElementById("secondvalue").value);
+            const option = document.getElementById("option").value;
+            let result = 0.0;
+            switch (option) {
+                case "+":
+                    result = addFunc(v1, v2);
+                    break;
+                case "-":
+                    result = subFunc(v1, v2);
+                    break;
+                default:
+                    result = mulFunc(v1, v2);
+                    break;
+            }
+            document.getElementById("result").innerText = result;
+        }
+    </script>
+    <div>
+        <h1>Calculator program</h1>
+        <input id="firstvalue" placeholder="First Value" />
+        <select id="option">
+            <option>+</option>
+            <option>-</option>
+            <option>X</option>
+            <option>/</option>
+        </select>
+        <input id="secondvalue" placeholder="Second Value" />
+        <button onclick="getResult()">Calculate</button>
+        <span id="result"></span>
+    </div>
+</html>

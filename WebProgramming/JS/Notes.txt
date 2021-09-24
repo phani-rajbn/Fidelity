@@ -1,0 +1,8 @@
+JS is a client side scripting language that is processed in the browser while we view the web page. browser have interpretor of JS that interprets the code of JS and generates an html content out of it. Traditionally JS could be executed only on browser until NODE JS came into existance. 
+So all JS code is tested thro browser, we need to write the JS code in an html page and access it. The page when viewed in the browser, the content of ths JS gets processed, and will be rendered in the browser as an output. 
+JS is controlled by ECMA which releases the stds for JS. Current version of JS is ES2020.
+JS code is included in the html pages in 2 ways: 
+inline scripting where the script logic is written in the html page itself. 
+external js files can be included in the html page and used. 
+the script tag is used to embedd the script into html. 
+Technically, U can write script anywhere in the html doc. It is recommended to be written either at the start of the html or at the end of the doc before the body tag closure. 
