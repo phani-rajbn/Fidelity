@@ -1,0 +1,13 @@
+SQL server is MS created database for developing databases that can be used by multiple applications and technologies. It is an RDBMS. SQL server is built on top of SQL a std programming language for interacting with Relational databases. SQL server uses T-SQL, Transact-SQL which is MS implementation of SQL which is specifically used in SQL Server programming. Most of the commands are common with SQL but few are modified. 
+Since 2017, MS is distributing SQL Server on other platforms like Unix and is currently available on both Windows and Linux.
+For learning SQL server, u can download a free version called as EXPRESS EDITION which can be intergrated into Visual Studio or to an IDE called SQL Server management Studio(SSMS). 
+There are 2 ways to connect to SQL server: Windows Authentication and SQL server Authentication. Windows will allow all its users to directly access the SQL server installation in that machine. Good for standalone and single PC users. For network, Organization U have SQL server Auth which gives a seperate credentials other than the OS credentials. OS credentials are must and SQL server credentials are added security in an enterprise software. 
+SQL EXPRESS is light weight and is not designed for enterprise networks.
+Data Definitions:
+Create, Remove and alter the database we will use DDL.
+Tables become the part of the database. Data is stored in the database in the form of tables. tables are data stored as rows and columns. U must define the table before U use them. We use a DDL command called Create to create a table in the selected database. Tablenames are unique to a given database. U could use schemas for creating tables with same name but in different schema. Schema is similar to namespaces in C#. 
+Table contain one or more columns which is defined before U use the table. This is called as TABLE Structure which tells what data is stored in the table as rows. Each column while creating will contain info about its name, data type and other constraints(Rules) that are applicable to it.
+
+
+
+
