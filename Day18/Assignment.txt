@@ -1,0 +1,7 @@
+﻿Create a class called Movie with details about a movie
+Create an interface that has all the CURD operations required to interact with SQL server
+Create a Class that implements the interface and provides implementations to interact with the db. 
+Create a main program class to test the class using interface object. 
+(2 Hrs) including creating the table, entity class, interface, implementor class and testing class. 
+handle the exceptions.
+
