@@ -44,6 +44,11 @@ namespace SampleFrameworkApp.Day11
         private static void displayDetailsOfAllFiles()
         {
             var files = Directory.GetFiles(@"C:\Users\phani\source\repos\Fidelity Training\SampleFrameworkApp\Day11");
+            if(files.Length == 0)
+            {
+                Console.WriteLine("NO files found");
+                return;
+            }
             foreach(var file in files)
             {
                 Console.WriteLine("Details of File: " + file);

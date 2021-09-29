@@ -56,10 +56,12 @@ namespace SampleFrameworkApp.Day13
 
         private static void xmlDeserialize()
         {
-            XmlSerializer fm = new XmlSerializer(typeof(Employee));
-            FileStream fs = new FileStream("Data.xml", FileMode.Open, FileAccess.Read);
-            var emp = fm.Deserialize(fs) as Employee;
-            Console.WriteLine(emp);
+            using (FileStream fs = new FileStream("Data.xml", FileMode.Open, FileAccess.Read))
+            {
+                XmlSerializer fm = new XmlSerializer(typeof(Employee));
+                var emp = fm.Deserialize(fs) as Employee;
+                Console.WriteLine(emp);
+            }
         }
 
         private static void xmlSerialize()

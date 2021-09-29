@@ -18,7 +18,7 @@ namespace SampleFrameworkApp.Day10
         public double DivFunc(double v1, double v2) => v1 / v2;
     }
 
-    delegate double MathFunc(double v1, double v2);
+    delegate double MathFunc(double v1, double v2); //2002..
     delegate void StringFunc(string arg);
     class Delegates
     {
@@ -31,22 +31,26 @@ namespace SampleFrameworkApp.Day10
         {
             var num1 = MyConsole.GetDouble("Enter the First Value");
             var num2 = MyConsole.GetDouble("Enter the Second Value");
-            var result = func(num1, num2);//U R not aware of the actual function when U call it. 
+            var result = func(num1, num2);//U R not aware of the actual function when U call it.
             Console.WriteLine("The Result: " + result);
         }
 
         static void Main(string[] args)
         {
-            Arithematic comp = new Arithematic();
-            MathFunc func = new MathFunc(comp.MulFunc);
-            //InvokeArithematicFunc(func);
+            Arithematic comp = new Arithematic();//Create the instance of Arithematic
+            MathFunc func = new MathFunc(comp.MulFunc);//Create the instance of Delegate and point to the function U want to call, in this case, the MulFunc of the Arithematic
+            InvokeArithematicFunc(func);//CallBack functions scenario
+            InvokeArithematicFunc(comp.AddFunc);//New syntax does not need to create an instace of the delegate, rather U can pass the function directly. 
 
             StringFunc fn = new StringFunc(DisplayText);
-            fn("Sample Test");
+            fn("Sample Test");//Invoking the method thru' the reference. 
 
             fn = new StringFunc(splitFunc);
             fn("Create a delegate that returns void and takes a string as an arg");
+
+          
         }
+
         static void splitFunc(string arg)
         {
             var words = arg.Split(' ');

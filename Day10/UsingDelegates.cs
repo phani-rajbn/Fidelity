@@ -39,7 +39,7 @@ namespace SampleFrameworkApp.Day10
         //    var temp = fruits.FindAll(predicate);
         //    return temp;
         //}
-        //////////////////////////Lambda Expression/////////////////////////////////////////////////////////
+        //////////////////////////Lambda Expression/////////////////////////////////
         static List<string> FindFruits(string name)
         {
             var fruits = new List<string> { "Apple", "Mango", "Orange", "Banana", "Grapes", "Kiwi" };

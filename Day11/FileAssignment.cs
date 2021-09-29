@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 namespace SampleFrameworkApp.Day11
 {
+    [Serializable]
     class Employee
     {
         public int EmpID { get; set; }
@@ -126,4 +127,6 @@ namespace SampleFrameworkApp.Day11
 //Data will be stored as CSV and read as object list. 
 /*
  * Multi Threading.
+ * Custom Generics.
+ * Serialization
  */

@@ -4,3 +4,14 @@
 		AddNewMovieToDatabase, An indexer to get a Movie based on ID, FindMoviesByDirector, FindMoviesByName.(15 min), GetTopRatedMovies. 	
 3. Create a class called MovieDB that implements the IMovieDatabase interface(30 min)
 4. GetTopRatedMovies should return the movies sorted by the rating, top rated movies should come first. 
+5. Create a Menu based UI App that will consume the IMovieDatabase and check the operations like Adding movie, Finding Movie by Director and Name. Using the internal Sort method, U should be able to get the Top Rated movies. 
+----------------------------------------------------------------------------------------
+Delegates: 
+1. Create a delegate called OnChange(string msg) that returns void. 
+2. Create a Class that performs CRUD operations on its Unique data. Use HashSet to store unique data
+3. The Class should store Unique players in it. 
+4. Create the Delegate instance as public field within the class. Dont instantiate it. 
+5. Call the Delegate instance with the Acceptance message whenever the data gets modified in the Class. (insert, delete and update)
+6. Create a program that creates the instance of the CRUD class and call all the modifying methods
+7. Create target Method that displays the message that UR class will send. 
+8. Associate the CRUD Class's public field with the target method which U want to invoke and see what happens.
