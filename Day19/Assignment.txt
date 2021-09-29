@@ -1,0 +1,4 @@
+﻿Assignment:
+Convert the XML data into array of Employees and try to insert the data into the SQL server database using ADO.NET Connected access model. 
+Read the Xml file using XLINQ and convert the data into List<Employee> objects.
+Using Connected data access model, push the data into the SQL server database table called Employee. 
