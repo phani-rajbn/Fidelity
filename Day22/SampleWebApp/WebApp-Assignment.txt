@@ -1,0 +1,3 @@
+﻿Create a class called Item{ ID, Name, Price, Quantity}
+Create a static class called Products which has a static property called AllProducts that reads data from a XML file downloaded from mockaroo using XLINQ. Let the no of products be 50.
+The data obtained from the Products should be stored as session and display the data in a Listbox of a Page called AllProducts.aspx
