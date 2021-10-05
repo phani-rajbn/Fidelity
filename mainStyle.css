@@ -1,0 +1,41 @@
+﻿* {
+    font-size: 14pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 3px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+h1 {
+    font-size: 30pt;
+    text-align: center;
+    color: lightcoral;
+}
+
+.row {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu {
+    width: 20%;
+    background-color: lightgray;
+}
+
+.center {
+    width: 55%;
+    background-color: darkgrey;
+}
+
+.right {
+    width: 20%;
+    height: auto;
+    margin: 5px;
+    background-color: lightblue;
+}
+
+footer {
+    bottom: 0;
+    position: fixed;
+}
