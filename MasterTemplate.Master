@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterTemplate.master.cs" Inherits="SampleWebApp.MasterTemplate" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="mainStyle.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+       <h1> ASP.NET Web Application Development</h1>
+        <p>ASP.NET Master controls will give U the common look and feel for all the pages of the Website. U can refer the links provided in the section below for visiting all the pages of this Web site</p>
+    </div>
+    <form id="form1" runat="server">
+        <div>
+            <div class="row menu">
+                <asp:Menu runat="server">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/HomePage.aspx" Text="HomePage" />
+                        <asp:MenuItem NavigateUrl="~/CalcProgram.aspx" Text="My Calcl" />
+                        <asp:MenuItem NavigateUrl="~/DisplayRecords.aspx" Text="LINQ DB" />
+                        <asp:MenuItem NavigateUrl="~/AddEmployee.aspx" Text="Register New" />
+                        <asp:MenuItem NavigateUrl="~/GridForm.aspx" Text="Table or Records" />
+                        <asp:MenuItem NavigateUrl="~/Home.aspx" Text="About Us" />
+                        <asp:MenuItem Text="State Management">
+                            <asp:MenuItem Text="QueryString" NavigateUrl="~/QuerystringDemo.aspx" />   
+                            <asp:MenuItem Text="Cookies" NavigateUrl="~/CookiesDemo.aspx" />   
+                            <asp:MenuItem Text="PreviousPage" NavigateUrl="~/PreviousPageDemo.aspx" />   
+                            <asp:MenuItem Text="Session" NavigateUrl="~/StateManagement.aspx" />   
+                        </asp:MenuItem>
+
+                    </Items>
+                </asp:Menu>      
+            </div>
+            <div class="row center">
+                <asp:ContentPlaceHolder ID="childContent" runat="server">
+                    <h2>Some content which will be modified by the child</h2>
+                </asp:ContentPlaceHolder>
+            </div>
+            <div class="row right">
+                <asp:Calendar runat="server" />      
+            </div>
+        </div>
+        <div class="footer">
+            <hr />  
+            <i>Powered by ASP.NET Web Forms</i>
+        </div>
+    </form>
+</body>
+</html>
