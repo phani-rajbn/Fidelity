@@ -1,0 +1,40 @@
+﻿@model List<SampleEntityLib.Employee>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+        h2{
+            font-size:26pt;
+        }
+        div{
+            border: 1px solid green;
+            width:300px;
+            height:400px;
+            display:inline-block;
+            vertical-align:top;
+        }
+    </style>
+</head>
+<body>
+    <h1>List of Employees from Entity Framework!!!</h1>
+    <hr />
+    @foreach (var emp in Model)
+    {
+        <div>
+            <h2>@emp.EmpName</h2>
+            <hr />
+            <p>@emp.EmpAddress</p>
+            <p>@emp.EmpSalary</p>
+            <p>@emp.EmpID</p>
+            <p>@Html.ActionLink("Update", "Update", new { id=emp.EmpID })</p>
+        </div>
+    }
+</body>
+</html>

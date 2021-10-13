@@ -1,0 +1,25 @@
+﻿@model SampleEntityLib.Employee
+
+@{ 
+    var options = new AjaxOptions
+    {
+        InsertionMode = InsertionMode.Replace,
+        UpdateTargetId = "divArea"
+    };
+    var items = ViewBag.Items as SelectListItem[];
+}
+
+@using (Ajax.BeginForm(options)) 
+{ 
+<div>
+    <h2>Details of the @Model.EmpName</h2>
+    <hr />
+    <p>Employee ID: @Html.DisplayFor((m) => m.EmpID)@Html.HiddenFor((m) => m.EmpID)</p>
+    <p>Employee Name: @Html.EditorFor((m) => m.EmpName)</p>
+    <p>Employee Address: @Html.EditorFor((m) => m.EmpAddress)</p>
+    <p>Employee Salary: @Html.EditorFor((m) => m.EmpSalary)</p>
+    <p>Dept of Employee: @Html.DropDownListFor((m)=>m.DeptId,items)</p>
+    <button type="submit">Save Changes</button>
+</div>    
+
+}

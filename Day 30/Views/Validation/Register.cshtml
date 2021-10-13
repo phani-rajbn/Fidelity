@@ -1,0 +1,37 @@
+﻿@model SampleMvcApp.Models.Customer
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register new Customer</h2>
+<hr />
+<style>
+    .error{
+        color:red;
+    }
+</style>
+@using (Html.BeginForm())
+{
+    <p>
+        Custome ID: @Html.EditorFor((m) => m.CustomerID)
+    </p>
+    <p>
+        Customer Name: @Html.EditorFor((m) => m.CustomterName)
+        @Html.ValidationMessageFor((m) => m.CustomterName,"",new { @class = "error"})
+    </p>
+    <p>
+        Customer Email: @Html.EditorFor((m) => m.EmailAddress)
+        @Html.ValidationMessageFor((m) => m.EmailAddress, "", new { @class = "error" })
+    </p>
+    <p>
+        Customer Name: @Html.EditorFor((m) => m.BillDate)
+        @Html.ValidationMessageFor((m) => m.BillDate, "", new { @class = "error" })
+    </p>
+    <p>
+        Customer Name: @Html.EditorFor((m) => m.Age)
+        @Html.ValidationMessageFor((m) => m.Age, "", new { @class = "error" })
+    </p>
+    <input type="submit" value="Register" />
+}
+

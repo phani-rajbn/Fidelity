@@ -1,0 +1,20 @@
+﻿@model List<SampleEntityLib.Employee>
+@{
+    var options = new AjaxOptions { UpdateTargetId = "divArea", InsertionMode = InsertionMode.Replace };
+}
+    @foreach (var emp in Model)
+    {
+    <div style="border:2px dashed green">
+        <h1>@emp.EmpName</h1>
+        <p>@emp.EmpAddress</p>
+        <p>@emp.EmpSalary:</p>
+        <p>
+            @Ajax.ActionLink("Edit", "OnUpdate", new { id = emp.EmpID }, options)
+            @Ajax.ActionLink("X", "OnDelete", new { id = emp.EmpID }, options)
+        </p>
+    </div>
+    }
+
+<!--
+It should display the delete page that will give the info of the Employee to delete. The User must click Submit button of the page as confirmation and then redirect to the Index page. 
+-->

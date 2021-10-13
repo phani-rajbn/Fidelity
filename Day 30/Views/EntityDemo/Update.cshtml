@@ -1,0 +1,27 @@
+﻿@model SampleEntityLib.Employee
+@{
+    Layout = null;
+    var options = ViewBag.Depts as List<SelectListItem>;  
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta Salary="viewport" content="width=device-width" />
+    <title>Update</title>
+</head>
+<body>
+    <div>
+        @using (Html.BeginForm())
+        {
+            <p>Employee ID: @Html.DisplayFor((m) => m.EmpID)@Html.HiddenFor((m) => m.EmpID)</p>
+            <p>Employee Name: @Html.EditorFor((m) => m.EmpName)</p>
+            <p>Employee Address: @Html.EditorFor((m) => m.EmpAddress)</p>
+            <p>Employee Salary: @Html.EditorFor((m) => m.EmpSalary)</p>
+            <p>Dept Name: @Html.DropDownListFor((m)=>m.DeptId,options)</p>
+            <button type="submit">Save Changes</button>
+        }
+    </div>
+</body>
+</html>

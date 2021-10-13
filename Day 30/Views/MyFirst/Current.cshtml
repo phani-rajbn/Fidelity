@@ -1,0 +1,41 @@
+﻿@model SampleMvcApp.Models.Employee
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details of the Employee</title>
+    <style>
+        div{
+            border: 2px solid blue;
+            border-radius:5px;
+            width:30%;
+            height:300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Details of Mr. @Model.EmpName</h1>
+    <hr />  
+    <div>
+        <h2>Place: @Model.EmpAddress</h2>
+        <hr />
+        <p>
+            Details: <br />
+            @Model.EmpID <br />
+            @Model.EmpName <br />
+            @Model.EmpAddress <br />
+            @Model.EmpSalary <br />
+        </p>
+    </div>
+</body>
+</html>
+<!--
+Create a model called Stock. with properties StockId, Name, Price, Date of Start.
+Creata an Action called GetStock that returns a View with details of the Stock object. Let the values for the Stock object be hard coded. 
+test the application by modifying the AppStart file with controller and action appropriately set. 
+-->

@@ -1,0 +1,29 @@
+﻿@using SampleMvcApp.Models
+@model List<Employee>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>  
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h1>List of Employees with Us!!!</h1>
+    <hr />
+    @foreach (var emp in Model)
+    {
+        <div style="border:2px dashed green">
+            <h1>@emp.EmpName</h1>
+            <p>@emp.EmpAddress</p>
+            <p>@emp.EmpSalary:</p>
+            <p>
+                @Html.ActionLink("Edit", "Change", new { id = emp.EmpID })
+                @Html.ActionLink("X", "OnDelete", new { id = emp.EmpID })
+            </p>@*HTTPGET*@
+         </div>
+    }
+</body>
+</html>

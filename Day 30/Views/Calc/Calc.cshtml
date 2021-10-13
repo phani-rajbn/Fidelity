@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+    var options = TempData["options"] as List<SelectListItem>;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Calc</title>
+</head>
+<body>
+    <h1>Calculator Program</h1>
+    <hr />
+    <div>
+        @using (Html.BeginForm("ProcessFunc", "Calc"))
+        {
+            <p>Enter the First Value: @Html.Editor("firstValue")</p>
+            <p>Enter the Second Value: @Html.Editor("secondValue")</p>
+            <p>Select the option: @Html.DropDownList("dpOptions", options) </p>
+            <p>
+                <input type="submit" value="Get Value" />
+            </p>
+        }
+    <p>
+        @*@if(ViewBag.Result != null)
+        {
+            <span>The Result: @ViewBag.Result</span>
+        }*@
+        @if (ViewData["Result"] != null)
+        {
+            <span>The Result: @Convert.ToDouble(ViewData["Result"])</span>
+        }
+    </p>
+    </div>
+</body>
+</html>
